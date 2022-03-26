@@ -4,6 +4,7 @@ services: docker
 
 before_install:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_ACCESS_TOKEN
+  DOCKERHUB_PASS: 61530ae0-d176-4340-8dc5-2af555836144
   - docker-conpose up --buid -d
 
 script:
